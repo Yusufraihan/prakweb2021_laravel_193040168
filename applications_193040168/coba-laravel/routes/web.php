@@ -20,13 +20,15 @@ use App\Models\User;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "home"
+        "title" => "home",
+        'active' => "home"
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "about",
+        'active' => "about",
         "name" => "Raden Yusuf Raihan Setiawan",
         "email" => "193040168@mail.unpas.ac.id",
         "image" => "profile.jpg"
